@@ -1,0 +1,54 @@
+* {
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+img {
+    width: 70%;
+}
+
+header {
+    background-color: #FFF0AC;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: #00BB00;
+}
+
+header p {
+    font-size: 0.8em;
+    color: crimson;
+}
+
+nav ul li {
+    list-style-type: none;
+    list-style-position: outside;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+nav ul li a:link {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: darkcyan;
+    text-decoration: none;
+}
