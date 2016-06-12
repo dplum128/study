@@ -38,13 +38,13 @@ nav ul li a:link {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: #f28c15;
+nav ul li a:visited {
+    color: darkcyan;
     text-decoration: none;
 }
 
-nav ul li a:visited {
-    color: darkcyan;
+nav ul li a:hover {
+    color: #f28c15;
     text-decoration: none;
 }
 
