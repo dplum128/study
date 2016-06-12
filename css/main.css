@@ -29,7 +29,7 @@ nav ul li {
     list-style-type: none;
     list-style-position: outside;
     display: inline-block;
-    width: 30%;
+    width: 20%;
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ nav ul li a:link {
 }
 
 nav ul li a:hover {
-    color: darkgoldenrod;
+    color: #f28c15;
     text-decoration: none;
 }
 
@@ -49,6 +49,6 @@ nav ul li a:visited {
 }
 
 nav ul li a:active {
-    color: darkcyan;
+    color: #f28c15;
     text-decoration: none;
 }
