@@ -52,3 +52,7 @@ nav ul li a:active {
     color: #f28c15;
     text-decoration: none;
 }
+
+.nodisplay {
+    display: none;
+}
