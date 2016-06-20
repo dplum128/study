@@ -18,6 +18,10 @@ footer,
     /*    border: 1px solid #f00;*/
 }
 
+.noshow {
+    display: none;
+}
+
 
 /* 導覽列 */
 
