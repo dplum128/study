@@ -40,7 +40,7 @@ a:hover {
 }
 
 #back {
-    /* background-image: url(../images/IPhone6S_RoseGold-2.jpg);*/
+    /*    background-image: url(../images/IPhone6S_RoseGold-2.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;
@@ -59,6 +59,9 @@ a:hover {
     position: relative;
     top: 23px;
     left: 1px;
+    background: linear-gradient(60deg, #aaa5a5, #ffffff, #ffffff, #b7b7b7);
+    background: -webkit-linear-gradient(60deg, #aaa5a5, #ffffff, #ffffff, #b7b7b7);
+    background: -moz-linear-gradient(60deg, #aaa5a5, #ffffff, #ffffff, #b7b7b7);
 }
 
 
@@ -117,7 +120,7 @@ a:hover {
     left: 42%;
     text-align: center;
     line-height: 3.3em;
-    color: #989898;
+    color: #626262;
 }
 
 
@@ -173,6 +176,22 @@ a:hover {
     background: linear-gradient(60deg, #BD948E, #DDB5B0, #FADBD6);
 }
 
+.sec-middle img {
+    display: block;
+    margin: 25% auto;
+    width: 21%;
+    height: auto;
+}
+
+.sec-middle p {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: #462734;
+    text-align: center;
+    display: block;
+    margin-top: 80%;
+}
+
 .sec-bottom {
     border-radius: 5px 5px 30px 30px;
     height: 2.2em;
@@ -181,6 +200,8 @@ a:hover {
     bottom: 7px;
     left: 8px;
     background: linear-gradient(60deg, #BC918B, #D1A8A2);
+    background: -webkit-linear-gradient(60deg, #BC918B, #D1A8A2);
+    background: -moz-linear-gradient(60deg, #BC918B, #D1A8A2);
 }
 
 
