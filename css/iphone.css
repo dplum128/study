@@ -40,7 +40,7 @@ a:hover {
 }
 
 #back {
-    background-image: url(../images/IPhone6S_RoseGold-2.jpg);
+    /* background-image: url(../images/IPhone6S_RoseGold-2.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;
@@ -49,9 +49,6 @@ a:hover {
     border: 0;
     float: left;
 }
-
-
-/* 元件-正面 */
 
 .outline {
     border: 3px solid rgb(255, 58, 134);
@@ -63,6 +60,9 @@ a:hover {
     top: 23px;
     left: 1px;
 }
+
+
+/* 元件-正面 */
 
 .front-item1 {
     border: 2px solid #393939;
@@ -125,30 +125,62 @@ a:hover {
 
 .sec-top {
     border-radius: 30px 30px 5px 5px;
-    background-color: rgba(187, 144, 138, 0.85);
     height: 2.2em;
     width: 95%;
     position: absolute;
     top: 7px;
     left: 8px;
+    background: linear-gradient(60deg, #D2A9A5, #EFC9C5, #F9DAD5);
 }
 
-.top-item1 {}
+.top-item1 {
+    border: 3px solid #757e45;
+    height: 1.8em;
+    width: 1.8em;
+    position: absolute;
+    top: 10%;
+    left: 10.5%;
+    background-color: #000;
+}
 
-.top-item2 {}
+.top-item2 {
+    border: 2px solid #393939;
+    height: 0.5em;
+    width: 0.5em;
+    position: absolute;
+    top: 39%;
+    left: 24%;
+    background-color: #000;
+}
 
-.top-item3 {}
+.top-item3 {
+    border: 1px solid #555;
+    height: 1.1em;
+    width: 1.1em;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    background: radial-gradient(#ffff20, rgba(254, 255, 216, 0.9), rgba(255, 255, 31, 0.7), #ffff00);
+    background: -webkit-radial-gradient(#ffff20, rgba(254, 255, 216, 0.9), rgba(255, 255, 31, 0.7), #ffff00);
+    background: -moz-radial-gradient(#ffff20, rgba(254, 255, 216, 0.9), rgba(255, 255, 31, 0.7), #ffff00);
+}
 
-.sec-middle {}
+.sec-middle {
+    height: 82%;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    background: linear-gradient(60deg, #BD948E, #DDB5B0, #FADBD6);
+}
 
 .sec-bottom {
-    border-radius: 30px 30px 5px 5px;
-    background-color: rgba(187, 144, 138, 0.85);
+    border-radius: 5px 5px 30px 30px;
     height: 2.2em;
     width: 95%;
     position: absolute;
-    top: 7px;
+    bottom: 7px;
     left: 8px;
+    background: linear-gradient(60deg, #BC918B, #D1A8A2);
 }
 
 
@@ -198,10 +230,10 @@ a:hover {
 
 .back-btn {
     border-radius: 0 3px 3px 0;
-    right: -2.2%;
+    right: -2%;
 }
 
 .back-power {
     border-radius: 3px 0 0 3px;
-    left: -2.2%;
+    left: -2%;
 }
