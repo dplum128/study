@@ -10,49 +10,140 @@
     border-radius: 100%;
 }
 
-#bg {
-    background-image: url(../images/IPhone6S_RoseGold-1.png);
+#front {
+    /* background-image: url(../images/IPhone6S_RoseGold-1.png);*/
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     height: 600px;
     border: 0;
+    float: left;
+}
+
+#back {
+    background-image: url(../images/IPhone6S_RoseGold-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    min-width: 300px;
+    height: 600px;
+    border: 0;
+    float: left;
 }
 
 
-/* 元件 */
+/* 元件-正面 */
 
 .outline {
+    border: 3px solid rgb(255, 58, 134);
+    border-radius: 42px;
     height: 555px;
-    width: 273px;
+    width: 272px;
     margin: 0 auto;
     position: relative;
     top: 23px;
-    border-radius: 42px;
-    border: 1px solid #ff0062;
+    left: 1px;
 }
 
 .top-item1 {
-    height: 10%;
-    border: 1px solid #c60000;
+    border: 2px solid #393939;
+    height: 0.5em;
+    width: 0.5em;
+    position: absolute;
+    top: 13px;
+    left: 129px;
+    background-color: #000;
 }
 
 .top-item2 {
-    height: 10%;
-    border: 1px solid #5e7dff;
+    border: 2px solid #393939;
+    height: 0.6em;
+    width: 0.6em;
+    position: absolute;
+    top: 5.5%;
+    left: 32.1%;
+    background-color: #000;
 }
 
 .top-item3 {
-    height: 10%;
-    border: 1px solid #41ff83;
+    border: 2px solid #393939;
+    border-radius: 25px;
+    height: 0.4em;
+    width: 2.7em;
+    position: absolute;
+    top: 5.8%;
+    left: 42%;
+    background-color: #000;
 }
 
 .screen {
-    height: 10%;
-    border: 1px solid #585858;
+    border: 2px solid #393939;
+    border-radius: 5px;
+    height: 26.6em;
+    width: 15.1em;
+    position: absolute;
+    top: 11.7%;
+    left: 5.1%;
+    background: linear-gradient(40deg, #000000, #080808, #f2f2f2);
+    background: -webkit-linear-gradient(40deg, #000000, #080808, #f2f2f2);
+    background: -moz-linear-gradient(40deg, #000000, #080808, #f2f2f2);
 }
 
 .home-button {
-    height: 10%;
-    border: 1px solid #678aff;
+    border: 2px solid #656565;
+    height: 2.7em;
+    width: 2.7em;
+    position: absolute;
+    bottom: 1.6%;
+    left: 42%;
+    text-align: center;
+    line-height: 3.3em;
+    color: #989898;
+}
+
+
+/* 元件-背面 */
+
+
+/* 側邊按鍵 */
+
+.btn1 {
+    border: 1px solid rgb(255, 58, 134);
+    border-radius: 3px 0 0 3px;
+    height: 1.4em;
+    width: 0.3em;
+    position: absolute;
+    top: 12.7%;
+    left: -1.8%;
+}
+
+.btn2 {
+    border: 1px solid rgb(255, 58, 134);
+    border-radius: 3px 0 0 3px;
+    height: 2.6em;
+    width: 0.3em;
+    position: absolute;
+    top: 21.3%;
+    left: -1.8%;
+}
+
+.btn3 {
+    border: 1px solid rgb(255, 58, 134);
+    border-radius: 3px 0 0 3px;
+    height: 2.6em;
+    width: 0.3em;
+    position: absolute;
+    top: 30.6%;
+    left: -1.8%;
+}
+
+.power {
+    border: 1px solid rgb(255, 58, 134);
+    border-radius: 0 3px 3px 0;
+    height: 2.6em;
+    width: 0.3em;
+    position: absolute;
+    top: 21.3%;
+    right: -2%;
 }
