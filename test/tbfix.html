@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <!--    <link rel="stylesheet" href="css/tbfix.css">-->
-    <link rel="stylesheet" href="css/fixedheadertable.css" media="screen">
-    <link rel="stylesheet" href="css/custom.css" media="screen">
+    <link rel="stylesheet" href="./css/fixedheadertable.css" media="screen">
+    <link rel="stylesheet" href="./css/custom.css" media="screen">
     <!--    script    -->
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/jquery.fixedheadertable.js"></script>
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="./js/jquery.fixedheadertable.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
             $('#mytb').fixedHeaderTable({
                 altClass: 'odd',
                 footer: false,
-                fixedColumn: true,
-                // fixedColumns: 2
+                //fixedColumn: true,
+                fixedColumns: 2,
                 themeClass: 'bluetable'
             });
         });
