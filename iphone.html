@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/iphone.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>iPhone 練習</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".home-click").click(function() {
+                $("iframe").toggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -14,9 +23,14 @@
             <div class="front-item1 circular"></div>
             <div class="front-item2 circular"></div>
             <div class="front-item3"></div>
-            <div class="screen"></div>
+            <div class="screen">
+                <iframe src="http://maywang.byethost10.com/iMusic/" frameborder="0" scrolling="auto"></iframe>
+                <!--                <div class="covering"></div>-->
+            </div>
             <div class="home-button circular">
-                <i class="material-icons">crop_square</i>
+                <a href="" class="home-click circular">
+                    <i class="material-icons">crop_square</i>
+                </a>
             </div>
             <div class="btn1 front-btn"></div>
             <div class="btn2 front-btn"></div>
@@ -43,4 +57,5 @@
         </div>
     </div>
 </body>
+
 </html>
