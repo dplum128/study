@@ -1,0 +1,21 @@
+.jumbotron {
+    background-color: rgba(162, 237, 255, 0.61);
+    background-image: url(../images/jumbotron-photo0.jpg);
+    color: #FFF;
+    text-align: center;
+    padding: 50px;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.phr {
+    text-align: center;
+}
+
+.phr:before,
+.phr:after {
+    content: " ------------------------------------------------------------ ";
+    font-weight: bold;
+}

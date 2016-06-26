@@ -4,41 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>RWD Eample</title>
+    <link rel="stylesheet" href="css/rwd.css">
 </head>
 
 <body>
     <div class="row">
-        <div class="col-md-12">
-            <nav>nav</nav>
-        </div>
+        <nav class="col-md-12">
+            <ul>
+                <li><a class="nav-active" href="#">Start RWD</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button>
+                <i class="material-icons">menu</i>
+            </button>
+        </nav>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <header>header</header>
+    <div class="container">
+        <div class="row">
+            <header class="col-md-12">
+                <h1>RWD Welcome!</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores tempora voluptatum molestiae consequatur. Excepturi quis voluptatum perferendis inventore beatae qui consectetur, officia rem veniam, saepe maiores, est asperiores tenetur quam.</p>
+                <button class="btn btn-bl">Call to action!</button>
+            </header>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">left</div>
-        <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x300" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/250x250" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/1000x300" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="row">
+            <h3 class="col-md-12">Latest Features</h3>
+            <article class="col-md-3 col-sm-6 thumbnail">
+                <img src="http://placehold.it/800x500" alt="">
+                <h4>Feature Label</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-bl">Buy Now!</button>
+                <button class="btn btn-wh">More info</button>
+            </article>
+            <article class="col-md-3 col-sm-6 thumbnail">
+                <img src="http://placehold.it/800x500" alt="">
+                <h4>Feature Label</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-bl">Buy Now!</button>
+                <button class="btn btn-wh">More info</button>
+            </article>
+            <article class="col-md-3 col-sm-6 thumbnail">
+                <img src="http://placehold.it/800x500" alt="">
+                <h4>Feature Label</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-bl">Buy Now!</button>
+                <button class="btn btn-wh">More info</button>
+            </article>
+            <article class="col-md-3 col-sm-6 thumbnail">
+                <img src="http://placehold.it/800x500" alt="">
+                <h4>Feature Label</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-bl">Buy Now!</button>
+                <button class="btn btn-wh">More info</button>
+            </article>
         </div>
     </div>
 </body>

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 
@@ -12,8 +13,9 @@
     clear: both;
 }
 
-row {
+.row {
     overflow: auto;
+    margin-bottom: 2vw;
 }
 
 
@@ -22,11 +24,115 @@ row {
 [class*="col-"] {
     width: 100%;
     float: left;
-    border: 1px solid #34d604;
-    padding: 5px;
+    /*    border: 1px solid #34d604;*/
 }
 
-@media screen and (min-width: 961px) {
+
+/* element 設定*/
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #000;
+    color: #FFF;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul>li {
+    list-style-type: none;
+    list-style-position: inside;
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+}
+
+nav button {
+    display: block;
+    background-color: #000;
+    color: #FFF;
+    float: right;
+    border: 1px solid rgba(204, 204, 204, 0.6);
+    border-radius: 5px;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 3px 8px;
+    margin: 9px 15px;
+}
+
+header {
+    border-radius: 3px;
+    background-color: #EEE;
+}
+
+.row h3 {
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+
+/* class 設定 */
+
+.nav-active {
+    color: #FFF;
+    font-size: 1.03em;
+    font-weight: normal;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.6rem;
+}
+
+.thumbnail>h4 {
+    margin: 0.6rem auto;
+}
+
+.thumbnail>p {
+    margin: 0.4rem 1.1vw;
+}
+
+.btn {
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.btn-bl {
+    font-size: 0.8rem;
+    background-color: #408CCA;
+    color: #FFF;
+    padding: 7px 1.1vw;
+    margin: 0.5vw 0.1vw;
+}
+
+.btn-wh {
+    font-size: 0.8rem;
+    background-color: #FFF;
+    color: #000;
+    border-color: #bbb;
+    padding: 7px 1.1vw;
+    margin: 0.5vw 0.1vw;
+}
+
+
+/************** RWD ****************/
+
+@media screen and (min-width: 941px) {
+    /* col 基本設定 */
     .col-md-1 {
         width: calc(100% * 1 / 12);
     }
@@ -63,9 +169,53 @@ row {
     .col-md-12 {
         width: calc(100% * 12 / 12);
     }
+    /* element 設定*/
+    nav {
+        height: 3rem;
+        line-height: 2.9rem;
+    }
+    nav ul {
+        margin-left: 10%;
+    }
+    nav ul>li {
+        margin-right: 2vw;
+    }
+    nav a {
+        padding: 0 2vw;
+    }
+    nav button {
+        display: none;
+    }
+    header {
+        padding: 30px;
+    }
+    header h1 {
+        margin: 0.8rem auto;
+        font-weight: 500;
+    }
+    header p {
+        padding: 0 0.5vw;
+        margin: 0.5rem auto;
+        line-height: 1.4rem;
+        font-size: 1rem;
+    }
+    /* class 設定 */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+    .thumbnail {
+        padding: 1vw;
+    }
+    .thumbnail>p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 521px) and (max-width: 940px) {
+    /* col 基本設定 */
     .col-sm-1 {
         width: calc(100% * 1 / 12);
     }
@@ -102,9 +252,53 @@ row {
     .col-sm-12 {
         width: calc(100% * 12 / 12);
     }
+    /* element 設定*/
+    nav {
+        height: 3rem;
+        line-height: 2.9rem;
+    }
+    nav ul {
+        margin-left: 5%;
+    }
+    nav ul>li {
+        margin-right: 1.8vw;
+    }
+    nav a {
+        padding: 0 1.8vw;
+    }
+    nav button {
+        display: none;
+    }
+    header {
+        padding: 30px;
+    }
+    header h1 {
+        margin: 0.8rem auto;
+        font-weight: 500;
+    }
+    header p {
+        padding: 0 0.5vw;
+        margin: 0.5rem auto;
+        line-height: 1.3rem;
+        font-size: 0.95rem;
+    }
+    /* class 設定 */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+    .thumbnail {
+        padding: 2vw;
+    }
+    .thumbnail>p {
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 520px) {
+    /* col 基本設定 */
     .col-xs-1 {
         width: calc(100% * 1 / 12);
     }
@@ -141,10 +335,51 @@ row {
     .col-xs-12 {
         width: calc(100% * 12 / 12);
     }
-}
-
-.thumbnail img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    /* element 設定*/
+    nav {
+        height: 3.4rem;
+        line-height: 3.3rem;
+    }
+    nav ul {
+        margin-left: 3%;
+    }
+    nav a {
+        padding-left: 1vw;
+        padding-right: 10vw;
+        display: none;
+    }
+    nav button {
+        display: block;
+    }
+    header {
+        padding: 20px 1%;
+    }
+    header h1 {
+        margin: 0.8rem auto;
+        font-weight: 500;
+    }
+    header p {
+        padding: 0 0.5vw;
+        margin: 0.8rem auto;
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+    }
+    /* class 設定 */
+    .nav-active {
+        display: inline-block;
+        color: #FFF;
+        font-size: 1.03em;
+    }
+    .container {
+        width: 94%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+    .thumbnail {
+        padding: 1.5vw;
+    }
+    .thumbnail>p {
+        font-size: 0.8rem;
+        line-height: 1.35rem;
+    }
 }
