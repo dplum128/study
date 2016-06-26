@@ -281,5 +281,6 @@ iframe {
     background: linear-gradient(40deg, #000000, #292929, #bebebe);
     background: -webkit-linear-gradient(40deg, #000000, #292929, #bebebe);
     background: -moz-linear-gradient(40deg, #000000, #292929, #bebebe);
+    display: none;
     z-index: 5;
 }
