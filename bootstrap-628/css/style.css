@@ -1,0 +1,33 @@
+.jumbotron {
+    background-color: #1c3b3b;
+    background-image: url(../images/pic1.jpg);
+    color: white;
+    background-size: cover;
+    text-align: center;
+    padding: 250px;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.glyphicon-tree-conifer {
+    font-size: 2rem;
+    margin-right: 3px;
+    color: #b9f21f;
+}
+
+.glyphicon-user {
+    font-size: 2rem;
+    margin-right: 3px;
+    color: #ffdc65;
+}
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-tabs li {
+    width: 25%;
+}

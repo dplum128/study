@@ -42,8 +42,8 @@ nav ul>li {
     list-style-position: outside;
     display: inline-block;
     border: 1px solid #FFF;
-    width: 24%;
-    margin: 0;
+    width: 25%;
+    margin-left: -3px;
     padding: 0;
     text-align: center;
     position: relative;
