@@ -1,0 +1,103 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #8eb5ff;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    /*    for Chrome */
+    /*
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: 0.5s;
+    */
+    -webkit-transition: width 1s, height 2s, transform 3s;
+}
+
+div:hover {
+    width: 300px;
+    height: 500px;
+    transform: rotate(180deg);
+}
+
+
+/* 影格動畫 */
+
+@keyframes move {
+    0% {
+        background-color: #ff6c00;
+        left: 0px;
+        top: 0px;
+    }
+    35% {
+        background-color: #ff2cff;
+        left: 100px;
+        top: 100px;
+    }
+    50% {
+        background-color: #16d016;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: #2652a7;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: #000;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+/* for Chrome */
+
+@-webkit-keyframes move {
+    0% {
+        background-color: #ff6c00;
+        left: 0px;
+        top: 0px;
+    }
+    35% {
+        background-color: #ff2cff;
+        left: 100px;
+        top: 100px;
+    }
+    50% {
+        background-color: #16d016;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: #2652a7;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: #000;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+section {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation: move 5s infinite;
+    animation-delay: 1s;
+    -webkit-animation: move 5s infinite;
+    -webkit-animation-delay: 1s;
+}
+
+
+/* link anumate */
+
+article {
+    width: 100px;
+    height: 100px;
+    background-color: #138933;
+    float: left;
+}

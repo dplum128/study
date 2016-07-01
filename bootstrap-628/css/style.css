@@ -31,3 +31,15 @@
 .nav-tabs li {
     width: 25%;
 }
+
+#head-pic img {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.thumbnail.avatar {
+    border: none;
+    text-align: center;
+}
