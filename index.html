@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>導覽目錄</title>
     <link rel="stylesheet" href="bootstrap-3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -19,45 +20,78 @@
                     </div>
                 </div>
             </div>
-            <div id="c1" class="cloud cloud2"></div>
-            <div id="c2"></div>
-            <div id="c3" class="cloud cloud3"></div>
+            <div id="c1" class="cloud cloud2" data-wow-delay="0.5s"></div>
+            <div id="c2" class="wow fadeInLeft" data-wow-delay="1s"></div>
+            <div id="c3" class="cloud cloud3" data-wow-delay="0.8s"></div>
         </div>
     </header>
     <div class="content">
         <div class="row">
             <h1 class="col-md-12">導覽目錄</h1>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="ch1/index.html">Go to Ch.1 Index</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="ch1/index.html">Go to Ch.1 Index</a>
+                </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="ch2/index.html">Go to Ch.2 Index</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="ch2/index.html">Go to Ch.2 Index</a>
+                </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="food.html">Go to 梅。食季!!</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="food.html">Go to 梅。食季!!</a>
+                </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="position.html">Position 練習</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="position.html">Position 練習</a>
+                </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="iphone.html">來支 iPhone 吧！*1</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="iphone.html">來支 iPhone 吧！</a>
+                </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="rwd.html">RWD 練習</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="rwd.html">RWD 練習</a>
+                </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="bootstrap.html">Bootstrap 練習</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="bootstrap.html">Bootstrap 練習</a>
+                </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
-                <a href="ribbon.html">偽元素 練習</a>
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="bootstrap-628.html">Bootstrap 練習-2</a>
+                </div>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="ribbon.html">偽元素 練習</a>
+                </div>
             </article>
         </div>
         <div class="row">
-            <article class="col-md-6 col-sm-6 cards">
-                <a href="http://maywang.byethost10.com/iMusic/" target="_blank">外部連結：iMusic</a>
+            <article class="col-md-6 col-sm-6 cards outside-cards">
+                <div class="thumbnail">
+                    <img src="images/seo-article-icon.png" alt="">
+                    <a href="http://maywang.byethost10.com/iMusic/" target="_blank">外部連結：iMusic</a>
+                </div>
             </article>
         </div>
-        <p>*1 無法使用外部連結資源/引用</p>
+        <p class="command">*1 無法使用外部連結資源/引用</p>
         <div class="timeline">
             <div class="t1"></div>
             <div class="t2"></div>
@@ -65,6 +99,10 @@
     </div>
     <footer>Hello World © 2016 D.Plum</footer>
     <scrpit src="bootstrap-3.3.1/js/bootstrap.min.js"></scrpit>
+    <script src="script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

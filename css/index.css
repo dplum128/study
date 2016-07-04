@@ -46,7 +46,8 @@ header {
     color: #FFF;
     text-align: center;
     padding-top: 120px;
-    height: 630px;
+    height: 650px;
+    /*    height: 100vh;*/
     min-width: 640px;
     position: relative;
     z-index: -2;
@@ -66,7 +67,7 @@ header {
 /* cintainer */
 
 article {
-    height: 100px;
+    height: 200px;
     margin-bottom: 100px;
     overflow: auto;
 }
@@ -81,6 +82,15 @@ article:nth-of-type(even) {
 
 article:nth-of-type(odd) {
     float: left;
+}
+
+.cards img {
+    height: 70%;
+    border-radius: 50%;
+}
+
+article.outside-cards .thumbnail {
+    border-radius: 100px;
 }
 
 .content {
@@ -119,6 +129,35 @@ article:nth-of-type(odd) {
     height: 100%;
     background-image: url(../images/timeline2.png);
     background-repeat: repeat-y;
+}
+
+.thumbnail {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+}
+
+.thumbnail a {
+    display: block;
+    font-size: 1.4em;
+    margin-top: 1rem;
+    font-family: sans-serif, "微軟正黑體";
+    font-weight: 600;
+}
+
+.command {
+    color: #F00;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #F00;
+}
+
+.command::selection {
+    background: #000;
+    color: #FF0;
 }
 
 
@@ -216,6 +255,7 @@ footer {
     position: absolute;
     top: 320px;
     left: -180px;
+    z-index: 2;
 }
 
 @media screen and (min-width: 1081px) {
@@ -229,7 +269,7 @@ footer {
         left: -30px;
     }
     #c2 {
-        height: 312px;
+        height: 330px;
         width: 620px;
         top: 320px;
         left: -180px;
@@ -250,7 +290,7 @@ footer {
     article.cards {
         position: relative;
         z-index: 1;
-        padding: 10px 13px;
+        padding: 15px 25px;
         border-radius: 22%;
         border: 5px solid #414141;
     }
@@ -276,6 +316,24 @@ footer {
         border-radius: 19%;
         border: 3px solid #4b4b4b;
         background: #FFF;
+    }
+    article.outside-cards {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 100px;
+        border-color: #ff003b;
+    }
+    article.outside-cards::before {
+        border-radius: 100px;
+        border-color: #eeff22;
+    }
+    article.outside-cards::after {
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        border-radius: 100px;
+        border-color: #1dff00;
     }
 }
 
@@ -336,7 +394,7 @@ footer {
     article.cards {
         position: relative;
         z-index: 1;
-        padding: 10px 13px;
+        padding: 15px 25px;
         border-radius: 22%;
         border: 5px solid #414141;
     }
@@ -362,6 +420,24 @@ footer {
         border-radius: 19%;
         border: 3px solid #4b4b4b;
         background: #FFF;
+    }
+    article.outside-cards {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 100px;
+        border-color: #ff003b;
+    }
+    article.outside-cards::before {
+        border-radius: 100px;
+        border-color: #eeff22;
+    }
+    article.outside-cards::after {
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        border-radius: 100px;
+        border-color: #1dff00;
     }
 }
 
@@ -430,7 +506,6 @@ footer {
         position: relative;
     }
     article {
-        height: 100px;
         margin-bottom: 20px;
         width: 85%;
         clear: both;
@@ -446,10 +521,13 @@ footer {
         right: 0;
     }
     article.cards {
+        float: right;
+        margin-right: 13%;
+        width: 75%;
         position: relative;
         z-index: 1;
-        padding: 15px;
-        border-radius: 22%;
+        padding: 10px;
+        border-radius: 25px;
         border: 5px solid #414141;
     }
     article.cards::before {
@@ -460,7 +538,7 @@ footer {
         left: 0px;
         right: 0px;
         bottom: 0px;
-        border-radius: 17%;
+        border-radius: 20px;
         border: 5px solid #9d9d9d;
     }
     article.cards::after {
@@ -471,8 +549,26 @@ footer {
         left: 2px;
         right: 2px;
         bottom: 2px;
-        border-radius: 19%;
+        border-radius: 18px;
         border: 3px solid #4b4b4b;
         background: #FFF;
+    }
+    article.outside-cards {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 100px;
+        border-color: #ff003b;
+    }
+    article.outside-cards::before {
+        border-radius: 100px;
+        border-color: #eeff22;
+    }
+    article.outside-cards::after {
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        border-radius: 100px;
+        border-color: #1dff00;
     }
 }
