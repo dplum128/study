@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* row 基本設定 */
+
+.row:after {
+    content: "";
+    clear: both;
+}
+
+.row {
+    overflow: auto;
+    margin-bottom: 2vw;
+}
+
+
+/* 基本設定 */
+
+body {
+    background: -webkit-linear-gradient(top, #d2ff52 630px, #91e842 100%);
+}
+
+.noshow {
+    visibility: hidden;
+}
+
+
+/* head */
+
+.jumbotron {
+    background-color: rgba(162, 237, 255, 0.61);
+    background-image: url(../images/jumbotron-photo0.jpg);
+    background-size: auto;
+    color: #FFF;
+    text-align: center;
+    padding-top: 120px;
+    height: 630px;
+    min-width: 640px;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    font-size: 8rem;
+}
+
+.jumbotron p {
+    margin: 2rem auto;
+    text-shadow: 1.5px 2px 2px #777;
+}
+
+
+/* cintainer */
+
+article {
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+article:nth-of-type(2) {
+    margin-top: 100px;
+}
+
+article:nth-of-type(even) {
+    float: right;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+}
+
+.timeline {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.timeline .t1 {
+    position: relative;
+    margin: 0 auto;
+    width: 57px;
+    height: 106px;
+    background-image: url(../images/timeline1.png);
+    background-repeat: no-repeat;
+}
+
+.timeline .t2 {
+    position: relative;
+    margin: 0 auto;
+    width: 57px;
+    height: 100%;
+    background-image: url(../images/timeline2.png);
+    background-repeat: repeat-y;
+}
+
+
+/******************* cloud *******************/
+
+.cloud {
+    border-top: none;
+    border-radius: 100px;
+    position: absolute;
+    margin: 100px auto 0;
+    width: 600px;
+    height: 180px;
+    border: none;
+    background-image: linear-gradient(#ccdeff 10%, #51b2f8 100%);
+}
+
+.cloud::before,
+.cloud::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+/* cloud2 */
+
+.cloud.cloud2::before {
+    width: 300px;
+    height: 280px;
+    top: -150px;
+    right: 70px;
+    border: none;
+    background: #ccdeff;
+}
+
+.cloud.cloud2::after {
+    width: 250px;
+    height: 180px;
+    top: -75px;
+    left: 60px;
+    border: none;
+    background: #ccdeff;
+    -webkit-transform: rotate(25deg);
+}
+
+
+/* cloud3 */
+
+.cloud.cloud3::after {
+    width: 330px;
+    height: 300px;
+    top: -130px;
+    left: 60px;
+    border: none;
+    background: #ccdeff;
+}
+
+.cloud.cloud3::before {
+    width: 180px;
+    height: 120px;
+    top: -70px;
+    right: 40px;
+    border: none;
+    background: #ccdeff;
+    -webkit-transform: rotate(-20deg);
+}
+
+#c1 {
+    top: 220px;
+    left: -30px;
+}
+
+#c2 {
+    height: 312px;
+    width: 620px;
+    background-image: url(../images/cloud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 320px;
+    left: -180px;
+}
+
+@media screen and (min-width: 1081px) {
+    /* col 基本設定 */
+    .col-md-6 {
+        width: calc(100% * 6 / 12 - 10%);
+    }
+    /* 其他設定*/
+    #c1 {
+        top: 220px;
+        left: -30px;
+    }
+    #c2 {
+        height: 312px;
+        width: 620px;
+        top: 320px;
+        left: -180px;
+    }
+    .cloud.cloud3 {
+        width: 550px;
+        height: 200px;
+        border-radius: 100px 0 0 100px;
+    }
+    #c3 {
+        right: -60px;
+    }
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1080px) {
+    /* col 基本設定 */
+    .col-sm-6 {
+        width: calc(100% * 6 / 12 - 10%);
+    }
+    #c1 {
+        height: 170px;
+        top: 220px;
+        left: -220px;
+    }
+    #c2 {
+        height: 254px;
+        width: 430px;
+        top: 370px;
+        left: -100px;
+    }
+    .cloud.cloud2::before {
+        width: 280px;
+        height: 260px;
+        top: -120px;
+        right: 80px;
+        border: none;
+        background: #ccdeff;
+    }
+    .cloud.cloud3 {
+        width: 450px;
+        height: 170px;
+        border-radius: 100px 0 0 100px;
+    }
+    .cloud.cloud3::after {
+        width: 230px;
+        height: 230px;
+        top: -110px;
+        left: 60px;
+        border: none;
+        background: #ccdeff;
+    }
+    .cloud.cloud3::before {
+        width: 200px;
+        height: 140px;
+        top: -60px;
+        right: 20px;
+        border: none;
+        background: #ccdeff;
+        -webkit-transform: rotate(-20deg);
+    }
+    #c3 {
+        right: -30px;
+    }
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #c1 {
+        height: 150px;
+        top: 220px;
+        left: -280px;
+    }
+    .cloud.cloud2::before {
+        width: 230px;
+        height: 220px;
+        top: -110px;
+        right: 65px;
+        border: none;
+        background: #ccdeff;
+    }
+    .cloud.cloud2::after {
+        width: 250px;
+        height: 180px;
+        top: -70px;
+        left: 120px;
+        border: none;
+        background: #ccdeff;
+        -webkit-transform: rotate(10deg);
+    }
+    #c2 {
+        height: 234px;
+        width: 391px;
+        top: 390px;
+        left: -150px;
+    }
+    .cloud.cloud3 {
+        width: 450px;
+        height: 170px;
+        border-radius: 100px 0 0 100px;
+    }
+    .cloud.cloud3::after {
+        width: 230px;
+        height: 230px;
+        top: -110px;
+        left: 60px;
+        border: none;
+        background: #ccdeff;
+    }
+    .cloud.cloud3::before {
+        width: 200px;
+        height: 140px;
+        top: -60px;
+        right: 20px;
+        border: none;
+        background: #ccdeff;
+        -webkit-transform: rotate(-20deg);
+    }
+    #c3 {
+        right: -130px;
+    }
+    .content {
+        width: 94%;
+        min-width: 480px;
+        margin: 0 auto;
+        position: relative;
+    }
+    article {
+        height: 100px;
+        margin-bottom: 20px;
+        width: 85%;
+    }
+    article:nth-of-type(2) {
+        margin-top: 0;
+    }
+    article:nth-of-type(even) {
+        float: none;
+    }
+    .timeline {
+        width: 57px;
+        right: 0;
+    }
+}

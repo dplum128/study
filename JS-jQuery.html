@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>title</title>
+</head>
+
+<body>
+    <div class="showPhoto">
+        <h1>就怕豬隊友啊!</h1>
+        <img src="images/head-pic.jpg" alt="">
+    </div>
+
+    <script src="script/jquery-3.0.0.min.js"></script>
+    <script src="script/myApp.js"></script>
+    <script>
+        $(function() {
+            $("img").hide();
+            $(".showPhoto").click(function() {
+                $("img").slideToggle(1000);
+            });
+        });
+    </script>
+</body>
+</html>
