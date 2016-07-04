@@ -4,27 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <title>導覽目錄</title>
+    <link rel="stylesheet" href="bootstrap-3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <h1>導覽目錄</h1>
-    <nav>
-        <ol>
-            <li><a href="ch1/index.html">Go to Ch.1 Index</a></li>
-            <li><a href="ch2/index.html">Go to Ch.2 Index</a></li>
-            <li><a href="food.html">Go to 梅。食季!!</a></li>
-            <li><a href="position.html">Position 練習 (nav ul>li:寬設定25%會溢出)*</a></li>
-            <li><a href="iphone.html">來支 iPhone 吧！(無法顯示php網頁)*</a></li>
-            <li><a href="rwd.html">RWD 練習</a></li>
-            <li><a href="bootstrap.html">Bootstrap 練習</a></li>
-        </ol>
-        <ul>
-            <li>
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Hello!</h1>
+                        <p>Welcome to Dark Plum world.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="c1" class="cloud cloud2"></div>
+            <div id="c2"></div>
+            <div id="c3" class="cloud cloud3"></div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="row">
+            <h1 class="col-md-12">導覽目錄</h1>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="ch1/index.html">Go to Ch.1 Index</a>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="ch2/index.html">Go to Ch.2 Index</a>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="food.html">Go to 梅。食季!!</a>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="position.html">Position 練習</a>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="iphone.html">來支 iPhone 吧！*1</a>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="rwd.html">RWD 練習</a>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="bootstrap.html">Bootstrap 練習</a>
+            </article>
+            <article class="col-md-6 col-sm-6 cards">
+                <a href="ribbon.html">偽元素 練習</a>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-md-6 col-sm-6 cards">
                 <a href="http://maywang.byethost10.com/iMusic/" target="_blank">外部連結：iMusic</a>
-            </li>
-            <li>無法使用外部連結資源/引用</li>
-        </ul>
-    </nav>
+            </article>
+        </div>
+        <p>*1 無法使用外部連結資源/引用</p>
+        <div class="timeline">
+            <div class="t1"></div>
+            <div class="t2"></div>
+        </div>
+    </div>
+    <footer>Hello World © 2016 D.Plum</footer>
+    <scrpit src="bootstrap-3.3.1/js/bootstrap.min.js"></scrpit>
 </body>
 
 </html>

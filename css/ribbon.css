@@ -1,64 +1,12 @@
-.ribbon {
-    font-size: 16px !important;
-    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-    width: 50%;
-    position: relative;
-    background: #ba89b6;
-    color: #fff;
-    text-align: center;
-    padding: 1em 2em;
-    /* Adjust to suit */
-    margin: 2em auto 3em;
-    /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-
-.ribbon:before,
-.ribbon:after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -1em;
-    border: 1.5em solid #986794;
-    z-index: -1;
-}
-
-.ribbon:before {
-    left: -2em;
-    border-right-width: 1.5em;
-    border-left-color: transparent;
-}
-
-.ribbon:after {
-    right: -2em;
-    border-left-width: 1.5em;
-    border-right-color: transparent;
-}
-
-.ribbon .ribbon-content:before,
-.ribbon .ribbon-content:after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-style: solid;
-    border-color: #804f7c transparent transparent transparent;
-    bottom: -1em;
-}
-
-.ribbon .ribbon-content:before {
-    left: 0;
-    border-width: 1em 0 0 1em;
-}
-
-.ribbon .ribbon-content:after {
-    right: 0;
-    border-width: 1em 1em 0 0;
+* {
+    box-sizing: border-box;
 }
 
 
-/* cloud */
+/******************* cloud *******************/
 
 .cloud {
-    width: 360px;
+    width: 380px;
     height: 120px;
     background-color: #F2F2F2;
     border: 3px solid #CCC;
@@ -66,6 +14,15 @@
     border-radius: 60px;
     position: relative;
     margin: 100px auto 0;
+    padding-top: 1px;
+    /*    padding-left: 18px;*/
+    /*    padding-right: 15px;*/
+}
+
+.cloud p {
+    color: #F00;
+    margin-left: 20px;
+    margin-right: 15px;
 }
 
 .cloud::before,
@@ -89,10 +46,84 @@
 
 .cloud::after {
     content: "";
-    top: -60px;
-    left: 50px;
+    top: -50px;
+    left: 40px;
     width: 120px;
     height: 120px;
     border: none;
     border-left: 3px solid #CCC;
+}
+
+
+/* c2 */
+
+.c2 {
+    width: 260px;
+    height: 80px;
+    /*    left: 500px;*/
+    /*    top: 200px;*/
+    border: none;
+    background-image: linear-gradient(#ccdeff 10%, #51b2f8 100%);
+}
+
+.c2.cloud::before {
+    top: -60px;
+    right: 38px;
+    width: 130px;
+    height: 130px;
+    border: none;
+    background: #ccdeff;
+}
+
+.c2.cloud::after {
+    top: -25px;
+    left: 35px;
+    width: 80px;
+    height: 50px;
+    border: none;
+    background: #ccdeff;
+    -webkit-transform: rotate(14deg);
+}
+
+.c2 p {
+    color: #F00;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* c3 */
+
+.c3 {
+    width: 260px;
+    height: 80px;
+    /*    left: 500px;*/
+    /*    top: 200px;*/
+    border: none;
+    background-image: linear-gradient(#ccdeff 10%, #51b2f8 100%);
+}
+
+.c3.cloud::after {
+    top: -60px;
+    left: 35px;
+    width: 130px;
+    height: 130px;
+    border: none;
+    background: #ccdeff;
+}
+
+.c3.cloud::before {
+    top: -20px;
+    right: 35px;
+    width: 80px;
+    height: 50px;
+    border: none;
+    background: #ccdeff;
+    -webkit-transform: rotate(-14deg);
+}
+
+.c3 p {
+    color: #F00;
+    margin-left: 10px;
+    margin-right: 10px;
 }
