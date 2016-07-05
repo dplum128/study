@@ -167,4 +167,8 @@ i {
 
 footer {
     clear: both;
+    text-align: center;
+    line-height: 2em;
+    background-color: #0000ff;
+    color: #FFF;
 }
