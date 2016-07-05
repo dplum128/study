@@ -6,21 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <title>title</title>
+    <style>
+        a {
+            display: block;
+            width: 20%;
+            height: 2m;
+            min-width: 6em;
+            line-height: 2em;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 1em auto;
+            border: 2px solid rgba(206, 15, 15, 0.69);
+            border-radius: 10px;
+        }
+
+        a:hover {
+            border: 2px solid rgba(101, 11, 113, 0.8);
+        }
+    </style>
 </head>
 
 <body>
+    <a href="index.html#ac11">回導覽目錄</a>
     <div class="showPhoto">
         <h1>就怕豬隊友啊!</h1>
         <img src="images/pig.jpg" alt="">
+        <br />
+        <img src="images/pig2.png" alt="">
     </div>
 
     <script src="script/jquery-3.0.0.min.js"></script>
     <script src="script/myApp.js"></script>
     <script>
         $(function() {
+            var isOpen = false;
+
             $("img").hide();
             $(".showPhoto").click(function() {
-                $("img").slideToggle(1000);
+                $("img:first-of-type").slideToggle(1000);
+
+                if (isOpen) {
+                    $("img:nth-of-type(2)").fadeOut(1000);
+                    // isOpen = false;
+                } else {
+                    $("img:nth-of-type(2)").fadeIn(1000);
+                    // isOpen = true;
+                }
+                isOpen = !isOpen;
             });
         });
     </script>
