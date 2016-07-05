@@ -118,7 +118,7 @@ a:hover {
     /*    left: 500px;*/
     /*    top: 200px;*/
     border: none;
-    background-image: linear-gradient(#ccdeff 10%, #51b2f8 100%);
+    background-image: linear-gradient(#eeff6f 10%, #ff6c00 100%);
 }
 
 .c3.cloud::after {
@@ -127,7 +127,7 @@ a:hover {
     width: 130px;
     height: 130px;
     border: none;
-    background: #ccdeff;
+    background: #eeff6f;
 }
 
 .c3.cloud::before {
@@ -136,7 +136,7 @@ a:hover {
     width: 80px;
     height: 50px;
     border: none;
-    background: #ccdeff;
+    background: #eeff6f;
     -webkit-transform: rotate(-14deg);
 }
 
