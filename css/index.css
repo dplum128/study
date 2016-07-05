@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
     box-sizing: border-box;
 }
@@ -11,7 +12,7 @@
 }
 
 .row {
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 2vw;
     position: relative;
     width: 100%;
@@ -101,7 +102,7 @@ article.outside-cards .thumbnail {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 70px;
-    font-family: "微軟正黑體";
+    font-family: "Noto Sans TC";
     font-weight: bold;
 }
 
@@ -143,12 +144,13 @@ article.outside-cards .thumbnail {
     display: block;
     font-size: 1.4em;
     margin-top: 1rem;
-    font-family: sans-serif, "微軟正黑體";
+    font-family: sans-serif, "Noto Sans TC";
     font-weight: 600;
 }
 
 .command {
     color: #F00;
+    font-family: serif, 'Noto Sans TC';
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
@@ -258,6 +260,28 @@ footer {
     z-index: 2;
 }
 
+.leftFadeIn {
+    animation-name: leftFadeIn;
+    /*    animation-delay: 0.5s;*/
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-animation-name: leftFadeIn;
+    /*    -webkit-animation-delay: 0.5s;*/
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.rightFadeIn {
+    animation-name: rightFadeIn;
+    /*    animation-delay: 0.8s;*/
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-name: rightFadeIn;
+    /*    -webkit-animation-delay: 0.8s;*/
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 @media screen and (min-width: 1081px) {
     /* col 基本設定 */
     .col-md-6 {
@@ -334,6 +358,43 @@ footer {
         bottom: 3px;
         border-radius: 100px;
         border-color: #1dff00;
+    }
+    /* animation - cloud in */
+    @keyframes leftFadeIn {
+        0% {
+            visibility: hidden;
+            left: -610px;
+        }
+        100% {
+            left: -30px;
+        }
+    }
+    @-webkit-keyframes leftFadeIn {
+        0% {
+            visibility: hidden;
+            left: -610px;
+        }
+        100% {
+            left: -30px;
+        }
+    }
+    @keyframes rightFadeIn {
+        0% {
+            visibility: hidden;
+            right: -560px;
+        }
+        100% {
+            right: -60px;
+        }
+    }
+    @-webkit-keyframes rightFadeIn {
+        0% {
+            visibility: hidden;
+            right: -560px;
+        }
+        100% {
+            right: -60px;
+        }
     }
 }
 
@@ -439,6 +500,43 @@ footer {
         border-radius: 100px;
         border-color: #1dff00;
     }
+    /* animation - cloud in */
+    @keyframes leftFadeIn {
+        0% {
+            visibility: hidden;
+            left: -610px;
+        }
+        100% {
+            left: -220px;
+        }
+    }
+    @-webkit-keyframes leftFadeIn {
+        0% {
+            visibility: hidden;
+            left: -610px;
+        }
+        100% {
+            left: -220px;
+        }
+    }
+    @keyframes rightFadeIn {
+        0% {
+            visibility: hidden;
+            right: -460px;
+        }
+        100% {
+            right: -30px;
+        }
+    }
+    @-webkit-keyframes rightFadeIn {
+        0% {
+            visibility: hidden;
+            right: -460px;
+        }
+        100% {
+            right: -30px;
+        }
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -506,12 +604,13 @@ footer {
         position: relative;
     }
     article {
+        margin-top: 20px;
         margin-bottom: 20px;
         width: 85%;
         clear: both;
     }
     article:nth-of-type(2) {
-        margin-top: 0;
+        margin-top: 20px;
     }
     article:nth-of-type(even) {
         float: none;
@@ -570,5 +669,42 @@ footer {
         bottom: 3px;
         border-radius: 100px;
         border-color: #1dff00;
+    }
+    /* animation - cloud in */
+    @keyframes leftFadeIn {
+        0% {
+            visibility: hidden;
+            left: -610px;
+        }
+        100% {
+            left: -280px;
+        }
+    }
+    @-webkit-keyframes leftFadeIn {
+        0% {
+            visibility: hidden;
+            left: -610px;
+        }
+        100% {
+            left: -280px;
+        }
+    }
+    @keyframes rightFadeIn {
+        0% {
+            visibility: hidden;
+            right: -460px;
+        }
+        100% {
+            right: -130px;
+        }
+    }
+    @-webkit-keyframes rightFadeIn {
+        0% {
+            visibility: hidden;
+            right: -460px;
+        }
+        100% {
+            right: -130px;
+        }
     }
 }

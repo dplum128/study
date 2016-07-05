@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>導覽目錄</title>
     <link rel="stylesheet" href="bootstrap-3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -20,9 +21,9 @@
                     </div>
                 </div>
             </div>
-            <div id="c1" class="cloud cloud2" data-wow-delay="0.5s"></div>
+            <div id="c1" class="cloud cloud2 leftFadeIn" data-wow-delay="0.5s"></div>
             <div id="c2" class="wow fadeInLeft" data-wow-delay="1s"></div>
-            <div id="c3" class="cloud cloud3" data-wow-delay="0.8s"></div>
+            <div id="c3" class="cloud cloud3 rightFadeIn" data-wow-delay="0.8s"></div>
         </div>
     </header>
     <div class="content">
@@ -55,7 +56,7 @@
             <article class="col-md-6 col-sm-6 cards">
                 <div class="thumbnail">
                     <img src="images/seo-article-icon.png" alt="">
-                    <a href="iphone.html">來支 iPhone 吧！</a>
+                    <a href="iphone.html">來支 iPhone 吧！ <sup>*1</sup></a>
                 </div>
             </article>
             <article class="col-md-6 col-sm-6 cards">
@@ -91,18 +92,22 @@
                 </div>
             </article>
         </div>
-        <p class="command">*1 無法使用外部連結資源/引用</p>
+        <p class="command">*1: 無法使用外部連結資源/引用</p>
         <div class="timeline">
             <div class="t1"></div>
             <div class="t2"></div>
         </div>
     </div>
     <footer>Hello World © 2016 D.Plum</footer>
+    <script src="script/jquery-3.0.0.min.js"></script>
     <scrpit src="bootstrap-3.3.1/js/bootstrap.min.js"></scrpit>
     <script src="script/wow.min.js"></script>
     <script>
         new WOW().init();
+        $(".content article.cards").addClass("wow flipInX").attr("data-wow-duration", "1.5s");
+        $(".content article.outside-cards").removeClass("flipInX").addClass("flipInY");
     </script>
+    <!--    <script src="script/indexApp.js"></script>-->
 </body>
 
 </html>
