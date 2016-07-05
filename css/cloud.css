@@ -2,6 +2,24 @@
     box-sizing: border-box;
 }
 
+a {
+    display: block;
+    width: 20%;
+    height: 2m;
+    min-width: 6em;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1em auto;
+    border: 2px solid rgba(5, 234, 14, 0.63);
+    border-radius: 10px;
+}
+
+a:hover {
+    border: 2px solid rgba(45, 85, 255, 0.8);
+}
+
 
 /******************* cloud *******************/
 
